@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.sport"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+//    compile 'com.android.support:appcompat-v7:23.1.1'
+    //crash抓去
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    //bmob云数据库
+    compile 'cn.bmob.android:bmob-sdk:3.4.6'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.squareup.okio:okio:1.4.0'
+    //加载图片
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //传值
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //网络
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    //控件注入库
+    compile 'com.jakewharton:butterknife:8.0.1'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    //高德地图相关类
+    compile files('libs/AMap_Location_v2.3.0_20160112.jar')
+    compile files('libs/AMap_2DMap_V2.8.1_20160202.jar')
+    compile files('libs/AMap_Search_V3.2.1_20160308.jar.jar')
+    //列表控件
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    //json解析控件
+    compile 'com.alibaba:fastjson:1.2.12'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+}

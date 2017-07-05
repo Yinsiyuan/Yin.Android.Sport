@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/mImg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#000" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:id="@+id/mTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/mImg"
+            android:text="1123123" />
+
+        <TextView
+            android:id="@+id/mContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mTitle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/mImg"
+            android:text="768687" />
+
+        <TextView
+            android:text="23333"
+            android:id="@+id/mDate"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        style="@style/SimpleDivider"/>
+</LinearLayout>

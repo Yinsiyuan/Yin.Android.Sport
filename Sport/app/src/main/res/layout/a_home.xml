@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/mContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/bar_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/news"
+            style="@style/BottomText"
+            android:drawableTop="@drawable/news_selector"
+            android:text="新闻" />
+
+        <RadioButton
+            android:id="@+id/place"
+            style="@style/BottomText"
+            android:drawableTop="@drawable/place_selector"
+            android:text="寻场" />
+
+        <RadioButton
+            android:id="@+id/team"
+            style="@style/BottomText"
+            android:drawableTop="@drawable/team_selector"
+            android:text="组队" />
+
+        <RadioButton
+            android:id="@+id/activity"
+            style="@style/BottomText"
+            android:drawableTop="@drawable/activity_selector"
+            android:text="商铺" />
+
+        <RadioButton
+            android:id="@+id/my"
+            style="@style/BottomText"
+            android:drawableTop="@drawable/my_selector"
+            android:text="我的" />
+    </RadioGroup>
+</LinearLayout>

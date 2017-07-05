@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/mTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/mImg"
+            android:singleLine="true"
+            android:text="1123123"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:lines="2"
+            android:text="1111"
+            android:id="@+id/mContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mTitle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/mImg" />
+
+        <TextView
+            android:id="@+id/mTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/mImg"
+            android:text="111" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/mTelImg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/place_tel" />
+
+</LinearLayout>
